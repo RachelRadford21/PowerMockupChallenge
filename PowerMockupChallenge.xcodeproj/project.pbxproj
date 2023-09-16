@@ -14,6 +14,14 @@
 		AB809A022AB5EC1400A0FA75 /* PowerMockupChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A012AB5EC1400A0FA75 /* PowerMockupChallengeTests.swift */; };
 		AB809A0C2AB5EC1400A0FA75 /* PowerMockupChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A0B2AB5EC1400A0FA75 /* PowerMockupChallengeUITests.swift */; };
 		AB809A0E2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A0D2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift */; };
+		AB809A1F2AB5ED4100A0FA75 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A1E2AB5ED4100A0FA75 /* MainView.swift */; };
+		AB809A232AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */; };
+		AB809A262AB5F28D00A0FA75 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A252AB5F28D00A0FA75 /* ViewModel.swift */; };
+		AB809A2A2AB6072800A0FA75 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A292AB6072800A0FA75 /* Extensions.swift */; };
+		AB809A2C2AB60DB900A0FA75 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A2B2AB60DB900A0FA75 /* CardView.swift */; };
+		AB809A2F2AB60FA400A0FA75 /* PowerIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */; };
+		AB809A312AB6218000A0FA75 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A302AB6218000A0FA75 /* TextView.swift */; };
+		AB809A332AB62D8E00A0FA75 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A322AB62D8E00A0FA75 /* LinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,16 @@
 		AB809A072AB5EC1400A0FA75 /* PowerMockupChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerMockupChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB809A0B2AB5EC1400A0FA75 /* PowerMockupChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMockupChallengeUITests.swift; sourceTree = "<group>"; };
 		AB809A0D2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMockupChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB809A1A2AB5EC5100A0FA75 /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
+		AB809A1E2AB5ED4100A0FA75 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		AB809A242AB5F1E300A0FA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AB809A252AB5F28D00A0FA75 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AB809A292AB6072800A0FA75 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB809A2B2AB60DB900A0FA75 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerIconView.swift; sourceTree = "<group>"; };
+		AB809A302AB6218000A0FA75 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		AB809A322AB62D8E00A0FA75 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +112,15 @@
 		AB8099EF2AB5EC1300A0FA75 /* PowerMockupChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				AB809A242AB5F1E300A0FA75 /* Info.plist */,
 				AB8099F02AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift */,
-				AB8099F22AB5EC1300A0FA75 /* ContentView.swift */,
+				AB809A1C2AB5ECE700A0FA75 /* Model */,
+				AB809A1B2AB5ECDE00A0FA75 /* View */,
+				AB809A1D2AB5ECF100A0FA75 /* ViewModel */,
+				AB809A202AB5F0B800A0FA75 /* HelperFiles */,
 				AB8099F42AB5EC1400A0FA75 /* Assets.xcassets */,
 				AB8099F62AB5EC1400A0FA75 /* Preview Content */,
+				AB809A1A2AB5EC5100A0FA75 /* NOTES.md */,
 			);
 			path = PowerMockupChallenge;
 			sourceTree = "<group>";
@@ -125,6 +148,75 @@
 				AB809A0D2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift */,
 			);
 			path = PowerMockupChallengeUITests;
+			sourceTree = "<group>";
+		};
+		AB809A1B2AB5ECDE00A0FA75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB8099F22AB5EC1300A0FA75 /* ContentView.swift */,
+				AB809A1E2AB5ED4100A0FA75 /* MainView.swift */,
+				AB809A272AB5F43700A0FA75 /* TopCard */,
+				AB809A282AB5F44400A0FA75 /* BottomCard */,
+				AB809A2D2AB60DC200A0FA75 /* GlobalView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB809A1C2AB5ECE700A0FA75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB809A1D2AB5ECF100A0FA75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB809A252AB5F28D00A0FA75 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB809A202AB5F0B800A0FA75 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AB809A212AB5F11300A0FA75 /* Fonts */,
+				AB809A292AB6072800A0FA75 /* Extensions.swift */,
+			);
+			path = HelperFiles;
+			sourceTree = "<group>";
+		};
+		AB809A212AB5F11300A0FA75 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AB809A272AB5F43700A0FA75 /* TopCard */ = {
+			isa = PBXGroup;
+			children = (
+				AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */,
+				AB809A302AB6218000A0FA75 /* TextView.swift */,
+				AB809A322AB62D8E00A0FA75 /* LinkView.swift */,
+			);
+			path = TopCard;
+			sourceTree = "<group>";
+		};
+		AB809A282AB5F44400A0FA75 /* BottomCard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BottomCard;
+			sourceTree = "<group>";
+		};
+		AB809A2D2AB60DC200A0FA75 /* GlobalView */ = {
+			isa = PBXGroup;
+			children = (
+				AB809A2B2AB60DB900A0FA75 /* CardView.swift */,
+			);
+			path = GlobalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8099F82AB5EC1400A0FA75 /* Preview Assets.xcassets in Resources */,
+				AB809A232AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				AB8099F52AB5EC1400A0FA75 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB809A2A2AB6072800A0FA75 /* Extensions.swift in Sources */,
 				AB8099F32AB5EC1300A0FA75 /* ContentView.swift in Sources */,
+				AB809A1F2AB5ED4100A0FA75 /* MainView.swift in Sources */,
+				AB809A262AB5F28D00A0FA75 /* ViewModel.swift in Sources */,
+				AB809A2C2AB60DB900A0FA75 /* CardView.swift in Sources */,
 				AB8099F12AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift in Sources */,
+				AB809A2F2AB60FA400A0FA75 /* PowerIconView.swift in Sources */,
+				AB809A332AB62D8E00A0FA75 /* LinkView.swift in Sources */,
+				AB809A312AB6218000A0FA75 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +520,7 @@
 				DEVELOPMENT_TEAM = 25MBFXXLA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PowerMockupChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +550,7 @@
 				DEVELOPMENT_TEAM = 25MBFXXLA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PowerMockupChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

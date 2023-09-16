@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PowerMockupChallengeApp: App {
+    @StateObject var vm: ViewModel = ViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+        
+           ContentView()
+                .environmentObject(vm)
+                .environment(\.font, Font.custom("Monserrat", size: 10))
         }
     }
 }
