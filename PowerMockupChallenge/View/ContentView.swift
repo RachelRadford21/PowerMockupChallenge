@@ -9,8 +9,8 @@ import SwiftUI
 
 //MARK: Comments:
 /*
-  This view shows an opening view and then transitions to the landing page
-*/
+ This view shows an opening view and then transitions to the landing page
+ */
 
 struct ContentView: View {
     @State private var isActive = false
@@ -20,10 +20,10 @@ struct ContentView: View {
         
         ZStack {
             if vm.isActive {
-               MainView()
+                MainView()
             }else {
                 ZStack {
-                    Color.openingViewBackground
+                    Color.powerColor
                         .ignoresSafeArea()
                     PowerIconView(width: 200, height: 200, alignmentChoice: .center, trailingPadding: 0, bottomPadding: 0)
                 }
@@ -36,7 +36,7 @@ struct ContentView: View {
                 }
             }
         }
-
+        
     }
 }
 
@@ -44,6 +44,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(ViewModel())
-            
+        
     }
 }

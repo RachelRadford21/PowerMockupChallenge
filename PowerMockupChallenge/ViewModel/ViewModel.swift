@@ -9,5 +9,6 @@ import Foundation
 import SwiftUI
 
 class ViewModel: ObservableObject {
-   @Published var isActive = false
+    @Published var isActive = false
+
 }

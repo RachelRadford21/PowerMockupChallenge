@@ -22,6 +22,9 @@
 		AB809A2F2AB60FA400A0FA75 /* PowerIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */; };
 		AB809A312AB6218000A0FA75 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A302AB6218000A0FA75 /* TextView.swift */; };
 		AB809A332AB62D8E00A0FA75 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A322AB62D8E00A0FA75 /* LinkView.swift */; };
+		AB8AA47F2AB6368C00E1ED2D /* SocialMediaStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */; };
+		AB8AA4812AB65B7600E1ED2D /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */; };
+		AB8AA4832AB673B200E1ED2D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4822AB673B200E1ED2D /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerIconView.swift; sourceTree = "<group>"; };
 		AB809A302AB6218000A0FA75 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		AB809A322AB62D8E00A0FA75 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaStatsView.swift; sourceTree = "<group>"; };
+		AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
+		AB8AA4822AB673B200E1ED2D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,9 +203,12 @@
 		AB809A272AB5F43700A0FA75 /* TopCard */ = {
 			isa = PBXGroup;
 			children = (
+				AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */,
 				AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */,
-				AB809A302AB6218000A0FA75 /* TextView.swift */,
 				AB809A322AB62D8E00A0FA75 /* LinkView.swift */,
+				AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */,
+				AB809A302AB6218000A0FA75 /* TextView.swift */,
+				AB8AA4822AB673B200E1ED2D /* ButtonView.swift */,
 			);
 			path = TopCard;
 			sourceTree = "<group>";
@@ -351,9 +360,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB809A2A2AB6072800A0FA75 /* Extensions.swift in Sources */,
+				AB8AA47F2AB6368C00E1ED2D /* SocialMediaStatsView.swift in Sources */,
+				AB8AA4832AB673B200E1ED2D /* ButtonView.swift in Sources */,
 				AB8099F32AB5EC1300A0FA75 /* ContentView.swift in Sources */,
 				AB809A1F2AB5ED4100A0FA75 /* MainView.swift in Sources */,
 				AB809A262AB5F28D00A0FA75 /* ViewModel.swift in Sources */,
+				AB8AA4812AB65B7600E1ED2D /* TopCardView.swift in Sources */,
 				AB809A2C2AB60DB900A0FA75 /* CardView.swift in Sources */,
 				AB8099F12AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift in Sources */,
 				AB809A2F2AB60FA400A0FA75 /* PowerIconView.swift in Sources */,

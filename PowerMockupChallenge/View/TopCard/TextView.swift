@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TextView: View {
-   
+
     var title = ""
     var bottomPadding: CGFloat = 280
     var topPadding: CGFloat = 0
@@ -31,5 +31,6 @@ struct TextView: View {
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
         TextView()
+            
     }
 }

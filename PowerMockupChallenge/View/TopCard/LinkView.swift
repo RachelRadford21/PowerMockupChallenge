@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct LinkView: View {
+    var title = ""
+    var bottomPadding: CGFloat = 20
+    var topPadding: CGFloat = 5
+    var leadingPadding: CGFloat = 0
+    var trailingPadding: CGFloat = 20
+    var textSize: CGFloat = 14
+    var textColor: Color = Color.linkColor
     var body: some View {
-        Link("Visit Power", destination: URL(string: "https://powerhrg.com")!)
-            .foregroundColor(Color.linkColor)
-            .padding(.top, 5)
-            .padding(.bottom, 210)
-            .padding(.trailing, 20)
-            .font(.system(size: 14))
+        Link(title, destination: URL(string: "https://powerhrg.com")!)
+            .foregroundColor(textColor)
+            .padding(.top, topPadding)
+            .padding(.bottom, bottomPadding)
+            .padding(.trailing, trailingPadding)
+            .font(.system(size: textSize))
     }
 }
 
