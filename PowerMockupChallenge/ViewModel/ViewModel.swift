@@ -10,5 +10,5 @@ import SwiftUI
 
 class ViewModel: ObservableObject {
     @Published var isActive = false
-
+    @Published var followers = 768
 }

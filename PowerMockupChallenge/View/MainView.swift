@@ -24,11 +24,12 @@ struct MainView: View {
                         .overlay {
                             TopCardView()
                         }
+                    Spacer()
                     VStack {
                         CardView(width: geo.size.width / 1.08, height: geo.size.height / 2.0, colorChoice: .white)
                             .overlay{
                                 VStack {
-                                    Text("Place holder")
+                                    Text("Placeholder")
                                 }
                             }
                     }
@@ -41,17 +42,15 @@ struct MainView: View {
                 VStack(spacing: 20) {
                     HStack(spacing: -20) {
                         CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
-                            .shadow(radius: 6)
                             .overlay{
                                 TopCardView()
                                 
                             }
                         Spacer()
                         CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
-                            .shadow(radius: 6)
                             .overlay{
                                 VStack {
-                                    Text("Place holder")
+                                    Text("Placeholder")
                                 }
                             }
                     }

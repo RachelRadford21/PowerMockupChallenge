@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SocialMediaStatsView: View {
-    var count = 768
-    var people = 1068
+    @EnvironmentObject var vm: ViewModel
+    var employees = 1068
     var textSize: CGFloat = 16
     var bottomPadding: CGFloat = 100
     var leadingPadding: CGFloat = 60
@@ -18,15 +18,16 @@ struct SocialMediaStatsView: View {
         
         HStack {
             HStack {
-                Text("\(count)").bold()
+                Text("\(vm.followers)").bold()
                     .font(.system(size: textSize))
                 Text("Followers")
                     .foregroundColor(Color.lightGrey)
                     .font(.system(size: textSize))
                 
             }.padding(.bottom, bottomPadding)
+                .padding(.trailing, 5)
             HStack {
-                Text("\(people)").bold()
+                Text("\(employees)").bold()
                     .font(.system(size: textSize))
                 Text("Employees")
                     .foregroundColor(Color.lightGrey)
@@ -39,8 +40,8 @@ struct SocialMediaStatsView: View {
     }
 }
 
-struct SocialMediaStats_Previews: PreviewProvider {
-    static var previews: some View {
-        SocialMediaStatsView()
-    }
-}
+//struct SocialMediaStats_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SocialMediaStatsView(followers: .constant(1))
+//    }
+//}

@@ -16,7 +16,7 @@ struct CardView: View {
         Rectangle()
             .frame(width: width, height: height)
             .foregroundColor(colorChoice)
-            .cornerRadius(6)
+            .cornerRadius(2)
 
     }
 }

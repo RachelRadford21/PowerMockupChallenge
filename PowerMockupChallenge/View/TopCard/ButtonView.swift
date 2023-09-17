@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ButtonView: View {
+    @EnvironmentObject var vm: ViewModel 
     var name = ""
     var buttonColor: Color = Color.powerColor
     var buttonTextColor: Color = .white
@@ -15,7 +16,9 @@ struct ButtonView: View {
     var body: some View {
         HStack {
             Button(name) {
-                // Could make the follower count go up when clicked
+                if name == "Follow" {
+                    vm.followers += 1
+                }
             }.frame(width: 150, height: 50)
                 .foregroundColor(buttonTextColor)
                 .background(buttonColor)
@@ -25,8 +28,8 @@ struct ButtonView: View {
     }
 }
 
-struct ButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonView()
-    }
-}
+//struct ButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ButtonView()
+//    }
+//}
