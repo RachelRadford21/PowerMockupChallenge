@@ -28,7 +28,7 @@ struct MainView: View {
                         CardView(width: geo.size.width / 1.08, height: geo.size.height / 2.0, colorChoice: .white)
                             .overlay{
                                 VStack {
-                                    Text("Place holder")
+                                    Text("Placeholder")
                                 }
                             }
                     }
@@ -51,7 +51,7 @@ struct MainView: View {
                             .shadow(radius: 6)
                             .overlay{
                                 VStack {
-                                    Text("Place holder")
+                                    Text("Placeholder")
                                 }
                             }
                     }
