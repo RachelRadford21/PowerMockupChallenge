@@ -45,7 +45,7 @@ struct MainView: View {
                         CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
                             .overlay{
                                 TopCardView()
-                                
+                                    
                             }
                         Spacer()
                         CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
@@ -68,5 +68,6 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(ViewModel())
+            
     }
 }

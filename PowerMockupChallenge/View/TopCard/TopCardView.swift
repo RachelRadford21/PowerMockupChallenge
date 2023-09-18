@@ -58,7 +58,7 @@ struct TopCardView: View {
                             ButtonView(name: "Follow", buttonColor: Color.powerColor, buttonTextColor: .white, topPadding: 250)
                             Spacer()
                             ButtonView(name: "Message", buttonColor: Color.otherGrey.opacity(0.1), buttonTextColor: Color.powerColor, topPadding: 250)
-
+                               
                         }.padding(.horizontal, 15)
                     }
                 }
