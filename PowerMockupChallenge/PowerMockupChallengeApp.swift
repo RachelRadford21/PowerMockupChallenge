@@ -15,7 +15,7 @@ struct PowerMockupChallengeApp: App {
         
            ContentView()
                 .environmentObject(vm)
-                .environment(\.font, Font.custom("Monserrat", size: 10))
+                .environment(\.font, Font.custom("Proxima Nova Reg", size: 10))
         }
     }
 }

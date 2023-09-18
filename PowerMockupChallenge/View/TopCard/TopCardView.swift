@@ -36,7 +36,7 @@ struct TopCardView: View {
                     SocialMediaStatsView(employees: 1068, textSize: 16, bottomPadding: 165, leadingPadding: 85, topPadding: 25)
             
                 }.overlay {
-                    TextView(title: "About", bottomPadding: 50, topPadding: 10, leadingPadding: 0, trailingPadding: 250, textSize: 16, textColor: .black)
+                    TextView(title: "About", bottomPadding: 40, topPadding: 10, leadingPadding: 0, trailingPadding: 265, textSize: 16, textColor: .black)
                         .bold()
 
                      TextView(title: """
@@ -44,7 +44,7 @@ struct TopCardView: View {
                                     the nation, our international technology team
                                     builds a custom suite of products that
                                     continuously transform our business.
-                                    """, bottomPadding: 10, topPadding: 90, leadingPadding: 10, trailingPadding: 0, textSize: 15, textColor: Color.lightGrey)
+                                    """, bottomPadding: 10, topPadding: 90, leadingPadding: 10, trailingPadding: 15, textSize: 15, textColor: Color.lightGrey)
                                         .multilineTextAlignment(.leading)
                                         .lineLimit(5)
                 }
@@ -52,10 +52,10 @@ struct TopCardView: View {
                     VStack {
                         HStack {
                             ButtonView(name: "Follow", buttonColor: Color.powerColor, buttonTextColor: .white, topPadding: 250)
-                                .environmentObject(vm)
+                            Spacer()
                             ButtonView(name: "Message", buttonColor: Color.otherGrey.opacity(0.1), buttonTextColor: Color.powerColor, topPadding: 250)
 
-                       }
+                        }.padding(.horizontal, 15)
                     }
                 }
             
@@ -64,8 +64,9 @@ struct TopCardView: View {
     }
 }
 
-//struct TopCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TopCardView()
-//    }
-//}
+struct TopCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        TopCardView()
+            .environmentObject(ViewModel())
+    }
+}

@@ -29,7 +29,13 @@ struct MainView: View {
                         CardView(width: geo.size.width / 1.08, height: geo.size.height / 2.0, colorChoice: .white)
                             .overlay{
                                 VStack {
-                                    Text("Placeholder")
+                                   BottomCardView()
+                                   
+//                                        TextView(title: "Employees", bottomPadding: 300, topPadding: 20, leadingPadding: -20, trailingPadding: 200, textSize: 16, textColor: .black)
+//                                            .bold()
+//                                        TextView(title: "Employees", bottomPadding: 300, topPadding: 20, leadingPadding: 0, trailingPadding: 265, textSize: 16, textColor: .black)
+ 
+                                    
                                 }
                             }
                     }

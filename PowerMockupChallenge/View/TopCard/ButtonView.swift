@@ -19,7 +19,7 @@ struct ButtonView: View {
                 if name == "Follow" {
                     vm.followers += 1
                 }
-            }.frame(width: 150, height: 50)
+            }.frame(width: 150, height: 40, alignment: .center)
                 .foregroundColor(buttonTextColor)
                 .background(buttonColor)
                 .cornerRadius(6)

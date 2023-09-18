@@ -1,6 +1,6 @@
 #  Power Mockup Challenge
 
-- Font: Proxima Novo. Temporarily using Monserrat until i can get design & asset file
+- Font: Proxima Nova. Temporarily using Monserrat until i can get design & asset file
 - Icon - Temp icon until i can get design & asset file
 - iPhone 14 Pro:
     - Height: 852

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB7B895A2AB79AFF005F02BA /* BottomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B89592AB79AFF005F02BA /* BottomCardView.swift */; };
+		AB7B895E2AB7A05E005F02BA /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B895D2AB7A05E005F02BA /* UserView.swift */; };
+		AB7B89602AB7ABBD005F02BA /* UserIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B895F2AB7ABBD005F02BA /* UserIconView.swift */; };
+		AB7B89622AB8B15F005F02BA /* proxima nova in Resources */ = {isa = PBXBuildFile; fileRef = AB7B89612AB8B15F005F02BA /* proxima nova */; };
 		AB8099F12AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8099F02AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift */; };
 		AB8099F32AB5EC1300A0FA75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8099F22AB5EC1300A0FA75 /* ContentView.swift */; };
 		AB8099F52AB5EC1400A0FA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8099F42AB5EC1400A0FA75 /* Assets.xcassets */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB7B89592AB79AFF005F02BA /* BottomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCardView.swift; sourceTree = "<group>"; };
+		AB7B895D2AB7A05E005F02BA /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		AB7B895F2AB7ABBD005F02BA /* UserIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIconView.swift; sourceTree = "<group>"; };
+		AB7B89612AB8B15F005F02BA /* proxima nova */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "proxima nova"; sourceTree = "<group>"; };
 		AB8099ED2AB5EC1300A0FA75 /* PowerMockupChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerMockupChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8099F02AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMockupChallengeApp.swift; sourceTree = "<group>"; };
 		AB8099F22AB5EC1300A0FA75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */,
+				AB7B89612AB8B15F005F02BA /* proxima nova */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -207,7 +216,6 @@
 				AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */,
 				AB809A322AB62D8E00A0FA75 /* LinkView.swift */,
 				AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */,
-				AB809A302AB6218000A0FA75 /* TextView.swift */,
 				AB8AA4822AB673B200E1ED2D /* ButtonView.swift */,
 			);
 			path = TopCard;
@@ -216,6 +224,9 @@
 		AB809A282AB5F44400A0FA75 /* BottomCard */ = {
 			isa = PBXGroup;
 			children = (
+				AB7B89592AB79AFF005F02BA /* BottomCardView.swift */,
+				AB7B895D2AB7A05E005F02BA /* UserView.swift */,
+				AB7B895F2AB7ABBD005F02BA /* UserIconView.swift */,
 			);
 			path = BottomCard;
 			sourceTree = "<group>";
@@ -224,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				AB809A2B2AB60DB900A0FA75 /* CardView.swift */,
+				AB809A302AB6218000A0FA75 /* TextView.swift */,
 			);
 			path = GlobalView;
 			sourceTree = "<group>";
@@ -332,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7B89622AB8B15F005F02BA /* proxima nova in Resources */,
 				AB8099F82AB5EC1400A0FA75 /* Preview Assets.xcassets in Resources */,
 				AB809A232AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				AB8099F52AB5EC1400A0FA75 /* Assets.xcassets in Resources */,
@@ -359,16 +372,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7B89602AB7ABBD005F02BA /* UserIconView.swift in Sources */,
 				AB809A2A2AB6072800A0FA75 /* Extensions.swift in Sources */,
 				AB8AA47F2AB6368C00E1ED2D /* SocialMediaStatsView.swift in Sources */,
 				AB8AA4832AB673B200E1ED2D /* ButtonView.swift in Sources */,
 				AB8099F32AB5EC1300A0FA75 /* ContentView.swift in Sources */,
 				AB809A1F2AB5ED4100A0FA75 /* MainView.swift in Sources */,
 				AB809A262AB5F28D00A0FA75 /* ViewModel.swift in Sources */,
+				AB7B895E2AB7A05E005F02BA /* UserView.swift in Sources */,
 				AB8AA4812AB65B7600E1ED2D /* TopCardView.swift in Sources */,
 				AB809A2C2AB60DB900A0FA75 /* CardView.swift in Sources */,
 				AB8099F12AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift in Sources */,
 				AB809A2F2AB60FA400A0FA75 /* PowerIconView.swift in Sources */,
+				AB7B895A2AB79AFF005F02BA /* BottomCardView.swift in Sources */,
 				AB809A332AB62D8E00A0FA75 /* LinkView.swift in Sources */,
 				AB809A312AB6218000A0FA75 /* TextView.swift in Sources */,
 			);
