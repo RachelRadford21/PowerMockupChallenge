@@ -9,7 +9,6 @@ import SwiftUI
 //MARK: Comments
 /*
  MainView is where all the components for the entire mockup will be housed.
- I like to build it out and then start seperating components out
  
  GeoReader is expensive so I try to use it sparingly
  */
@@ -30,12 +29,8 @@ struct MainView: View {
                             .overlay{
                                 VStack {
                                    BottomCardView()
-                                   
-//                                        TextView(title: "Employees", bottomPadding: 300, topPadding: 20, leadingPadding: -20, trailingPadding: 200, textSize: 16, textColor: .black)
-//                                            .bold()
-//                                        TextView(title: "Employees", bottomPadding: 300, topPadding: 20, leadingPadding: 0, trailingPadding: 265, textSize: 16, textColor: .black)
- 
-                                    
+                                       
+                            
                                 }
                             }
                     }
@@ -56,7 +51,8 @@ struct MainView: View {
                         CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
                             .overlay{
                                 VStack {
-                                    Text("Placeholder")
+                                    BottomCardView()
+                                      
                                 }
                             }
                     }

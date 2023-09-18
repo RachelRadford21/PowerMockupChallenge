@@ -16,6 +16,7 @@ struct UserIconView: View {
             Text(initials)
                 .frame(width: 50, height: 50)
                 .foregroundColor(.white)
+                .font(.system(size: 16))
                 .background(
                     Circle()
                         .fill(Color.gray.opacity(0.4))

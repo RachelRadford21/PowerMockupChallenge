@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ButtonView: View {
-    @EnvironmentObject var vm: ViewModel 
+    @EnvironmentObject var vm: ViewModel
     var name = ""
     var buttonColor: Color = Color.powerColor
     var buttonTextColor: Color = .white
@@ -20,6 +20,8 @@ struct ButtonView: View {
                     vm.followers += 1
                 }
             }.frame(width: 150, height: 40, alignment: .center)
+                .font(.system(size: 14))
+                .fontWeight(.semibold)
                 .foregroundColor(buttonTextColor)
                 .background(buttonColor)
                 .cornerRadius(6)

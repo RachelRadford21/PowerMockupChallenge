@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
-
+//MARK: Comments
+/*
+ This view houses all the components that make up the top card
+*/
 struct TopCardView: View {
     @EnvironmentObject var vm: ViewModel
     var body: some View {
@@ -30,7 +33,7 @@ struct TopCardView: View {
                     VStack {
                         TextView(title: "TECHNOLOGY", bottomPadding: 140, topPadding: 20, leadingPadding: 30, trailingPadding: 85, textSize: 12, textColor: Color.lightGrey)
                             .kerning(0.84)
-                        
+                        // This link will go to Power's website
                         LinkView(title: "Visit Power", bottomPadding: 120, topPadding: -140, leadingPadding: 0, trailingPadding: 70, textSize: 14)
                     }
                     SocialMediaStatsView(employees: 1068, textSize: 16, bottomPadding: 165, leadingPadding: 85, topPadding: 25)
@@ -51,6 +54,7 @@ struct TopCardView: View {
                 .overlay {
                     VStack {
                         HStack {
+                            // This button will add one follower on click
                             ButtonView(name: "Follow", buttonColor: Color.powerColor, buttonTextColor: .white, topPadding: 250)
                             Spacer()
                             ButtonView(name: "Message", buttonColor: Color.otherGrey.opacity(0.1), buttonTextColor: Color.powerColor, topPadding: 250)
@@ -68,5 +72,6 @@ struct TopCardView_Previews: PreviewProvider {
     static var previews: some View {
         TopCardView()
             .environmentObject(ViewModel())
+            
     }
 }

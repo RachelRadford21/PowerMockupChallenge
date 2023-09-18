@@ -11,15 +11,24 @@ struct UserView: View {
     var employeeName = "Jason Cypret"
     var employeeRole = "Vice President of User Experience"
     var initials = ""
-  
+  var imageName = ""
     var body: some View {
         
         
         HStack {
-        UserIconView(initials: initials)
+            if employeeName == "Courtney Long" {
+                AvatarIconView(imageName: imageName)
+                    
+            }else {
+                UserIconView(initials: initials)
+            }
             VStack(alignment: .leading) {
                 Text(employeeName)
+                    .font(.system(size: 16))
+                    .fontWeight(.bold)
                 Text(employeeRole)
+                    .foregroundColor(Color.lightGrey)
+                    .font(.system(size: 16))
             }
         }
     }
