@@ -8,7 +8,7 @@
 import SwiftUI
 //MARK: Comments
 /*
- This view houses all the components that make up the top card
+ This view houses all the components that make up the top card. This view is a little large
 */
 struct TopCardView: View {
     @EnvironmentObject var vm: ViewModel

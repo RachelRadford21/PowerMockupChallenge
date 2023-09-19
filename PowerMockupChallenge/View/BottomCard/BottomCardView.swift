@@ -26,7 +26,7 @@ struct BottomCardView: View {
                 UserView(employeeName: "Stephen Marshall", employeeRole: "Senior UX Designer", initials: "SM")
 
             }
-            // This need to be button and a new sheet with a list of all employees
+            
             TextView(title: "View All", bottomPadding: 0, topPadding: 10, leadingPadding: 0, trailingPadding: 0, textSize: 14, textColor: .blue)
                 .onTapGesture {
                     isPresented.toggle()
