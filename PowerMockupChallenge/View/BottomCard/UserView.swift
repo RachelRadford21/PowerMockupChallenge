@@ -11,10 +11,10 @@ struct UserView: View {
     var employeeName = "Jason Cypret"
     var employeeRole = "Vice President of User Experience"
     var initials = ""
-  var imageName = ""
+    var imageName = ""
     var body: some View {
         
-    
+    // Could make this a ForEach and loop through
         HStack {
             if employeeName == "Courtney Long" {
                 AvatarIconView(imageName: imageName)

@@ -11,7 +11,9 @@ import SwiftUI
  This view houses all the components for the bottom card
 */
 struct BottomCardView: View {
+    @State var isPresented = false
     private let avatar: Image  = Image("Avatar.png")
+    
     var body: some View {
         VStack {
             TextView(title: "Employees", bottomPadding: 20, topPadding: 20, leadingPadding: 25, trailingPadding: 255, textSize: 16, textColor: .black)
@@ -26,6 +28,11 @@ struct BottomCardView: View {
             }
             // This need to be button and a new sheet with a list of all employees
             TextView(title: "View All", bottomPadding: 0, topPadding: 10, leadingPadding: 0, trailingPadding: 0, textSize: 14, textColor: .blue)
+                .onTapGesture {
+                    isPresented.toggle()
+                }.sheet(isPresented: $isPresented) {
+                    ViewAllEmployeesView()
+                }
         }
     }
 }
