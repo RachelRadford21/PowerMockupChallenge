@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ButtonView: View {
     @EnvironmentObject var vm: ViewModel
+    @State var isMessageButtonPressed = false
     var name = ""
     var buttonColor: Color = Color.powerColor
     var buttonTextColor: Color = .white
@@ -20,8 +21,9 @@ struct ButtonView: View {
                     vm.followers += 1
                 }
                 if name == "Message" {
-                    vm.isMessageButtonPressed.toggle()
+                    isMessageButtonPressed.toggle()
                 }
+
             }.frame(width: 150, height: 40, alignment: .center)
                 .font(.system(size: 14))
                 .fontWeight(.semibold)
@@ -29,7 +31,7 @@ struct ButtonView: View {
                 .background(buttonColor)
                 .cornerRadius(6)
                 .padding(.top, topPadding)
-                .sheet(isPresented: $vm.isMessageButtonPressed) {
+                .sheet(isPresented: $isMessageButtonPressed) {
                     MessageView()
                 }
             

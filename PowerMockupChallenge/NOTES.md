@@ -9,4 +9,4 @@
 - Use Figma file as a guide
 - Build out Folder Architecture
 
-- Build out MainView and then seperate out reusable components
+- Build out MainView and then separate out reusable components
