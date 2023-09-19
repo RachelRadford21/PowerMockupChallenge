@@ -28,3 +28,17 @@ extension Employee {
         .init(id: UUID(), firstname: "Rachel", lastname: "Radford", role: "Associate Frontend iOS Developer")
     ]
 }
+
+extension ButtonView {
+    func buttonFunctions() {
+        if name == "Follow" {
+            vm.followers += 1
+        }
+        if name == "Message" {
+            isMessageButtonPressed.toggle()
+        }
+        if name == "Cancel" {
+            vm.user = ""
+        }
+    }
+}

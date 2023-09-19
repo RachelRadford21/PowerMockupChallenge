@@ -33,6 +33,7 @@
 		AB8AA47F2AB6368C00E1ED2D /* SocialMediaStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */; };
 		AB8AA4812AB65B7600E1ED2D /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */; };
 		AB8AA4832AB673B200E1ED2D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4822AB673B200E1ED2D /* ButtonView.swift */; };
+		AB91E81A2ABA62E5003ADCE2 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaStatsView.swift; sourceTree = "<group>"; };
 		AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
 		AB8AA4822AB673B200E1ED2D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +220,7 @@
 				AB809A322AB62D8E00A0FA75 /* LinkView.swift */,
 				AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */,
 				AB8AA4822AB673B200E1ED2D /* ButtonView.swift */,
-				AB818A7D2AB8FE5400ABE862 /* MessageView.swift */,
+				AB91E8182ABA62D0003ADCE2 /* MessagePage */,
 			);
 			path = TopCard;
 			sourceTree = "<group>";
@@ -250,6 +252,15 @@
 				AB818A802AB909A100ABE862 /* Employee.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AB91E8182ABA62D0003ADCE2 /* MessagePage */ = {
+			isa = PBXGroup;
+			children = (
+				AB818A7D2AB8FE5400ABE862 /* MessageView.swift */,
+				AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */,
+			);
+			path = MessagePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +409,7 @@
 				AB7B895E2AB7A05E005F02BA /* UserView.swift in Sources */,
 				AB8AA4812AB65B7600E1ED2D /* TopCardView.swift in Sources */,
 				AB809A2C2AB60DB900A0FA75 /* CardView.swift in Sources */,
+				AB91E81A2ABA62E5003ADCE2 /* MessageBubbleView.swift in Sources */,
 				AB8099F12AB5EC1300A0FA75 /* PowerMockupChallengeApp.swift in Sources */,
 				AB809A2F2AB60FA400A0FA75 /* PowerIconView.swift in Sources */,
 				AB7B895A2AB79AFF005F02BA /* BottomCardView.swift in Sources */,

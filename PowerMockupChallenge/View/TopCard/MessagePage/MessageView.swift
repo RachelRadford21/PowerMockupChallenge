@@ -30,35 +30,12 @@ struct MessageView: View {
             List {
                 ForEach(vm.searchedEmployees.isEmpty ? employees : filteredEmployees, id: \.id) { name in
                     NavigationLink {
-                      
+                        
                         UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)", imageName: name.firstname == "Courtney" ? "Avatar" : "")
                             .padding(.top, 20)
                         Spacer()
-                        // This needs styling
-                        
-                            Text("Hi, do we still have a meeting at 10?")
-                                .font(.system(size: 16))
-                                .frame(width: 200, height: 50)
-                                .foregroundColor(.white)
-                                .background(Color.blue)
-                                .cornerRadius(20)
-                                .padding(.trailing, -150)
-                                .padding(.bottom, 20)
-                            Text("Yes, we do. See you then.")
-                                .font(.system(size: 16))
-                                .frame(width: 200, height: 50)
-                                .foregroundColor(.white)
-                                .background(Color.lightGrey)
-                                .cornerRadius(20)
-                                .padding(.trailing, 150)
-                                .padding(.bottom, 300)
-                                .overlay {
-                                   Text("👍🏼")
-                                        .font(.system(size: 30))
-                                        .position(x: 15, y: -2)
-                                }
+                        MessageBubbleView(employee1: "Hi, do we still have a meeting at 10?", employee2: "Yes, we do. See you then.")
                         Spacer()
-                        
                         
                         VStack {
                             TextField("Message", text: $vm.user)
@@ -72,10 +49,12 @@ struct MessageView: View {
                             HStack {
                                 ButtonView(name: "Send", buttonColor: Color.powerColor, buttonTextColor: .white, topPadding: 0)
                                 ButtonView(name: "Cancel", buttonColor: Color.otherGrey.opacity(0.1), buttonTextColor: .powerColor, topPadding: 0)
+                                    
+                                    
                                 
                             }.padding(.top, 20)
                         }.padding(.bottom, 20)
-                       
+                        
                     }label: {
                         Text(name.firstname + " " + name.lastname)
                             .font(.system(size: 16))

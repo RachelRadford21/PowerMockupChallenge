@@ -17,13 +17,7 @@ struct ButtonView: View {
     var body: some View {
         HStack {
             Button(name) {
-                if name == "Follow" {
-                    vm.followers += 1
-                }
-                if name == "Message" {
-                    isMessageButtonPressed.toggle()
-                }
-
+                buttonFunctions()
             }.frame(width: 150, height: 40, alignment: .center)
                 .font(.system(size: 14))
                 .fontWeight(.semibold)
