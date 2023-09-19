@@ -13,7 +13,7 @@ import SwiftUI
  GeoReader is expensive so I try to use it sparingly
  */
 struct MainView: View {
-    @ObservedObject var vm: ViewModel = ViewModel()
+    @EnvironmentObject var vm: ViewModel 
     var body: some View {
         GeometryReader { geo in
             if geo.size.height > geo.size.width {

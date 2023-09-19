@@ -12,4 +12,8 @@ class ViewModel: ObservableObject {
     @Published var isActive = false
     @Published var followers = 768
     @Published var isMessageButtonPressed = false
+    @Published var isPresented = false
+    @Published var user = ""
+    @Published var message = ""
+    @Published var searchedEmployees = ""
 }

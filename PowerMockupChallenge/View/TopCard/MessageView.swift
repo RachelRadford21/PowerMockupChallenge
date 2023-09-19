@@ -15,13 +15,11 @@ import SwiftUI
 */
 
 struct MessageView: View {
-    @State var user = ""
-    @State var message = ""
-    @State var searchedEmployees = ""
+    @EnvironmentObject var vm: ViewModel
     var employees: [Employee] = Employee.randomData
     // Filters data in lower or uppercase and first or last name
     var filteredEmployees: [Employee] {
-        return employees.filter { $0.firstname.localizedCaseInsensitiveContains(searchedEmployees) || $0.lastname.localizedCaseInsensitiveContains(searchedEmployees)
+        return employees.filter { $0.firstname.localizedCaseInsensitiveContains(vm.searchedEmployees) || $0.lastname.localizedCaseInsensitiveContains(vm.searchedEmployees)
             
         }
     }
@@ -30,14 +28,14 @@ struct MessageView: View {
         NavigationStack {
             PowerIconView(width: 55, height: 55, alignmentChoice: .topLeading, trailingPadding: 0, bottomPadding: 0)
             List {
-                ForEach(searchedEmployees.isEmpty ? employees : filteredEmployees, id: \.id) { name in
+                ForEach(vm.searchedEmployees.isEmpty ? employees : filteredEmployees, id: \.id) { name in
                     NavigationLink {
                         Spacer()
-                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)", imageName: "Avatar")
+                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)", imageName: name.firstname == "Courtney" ? "Avatar" : "")
 
                         Spacer()
                         // This needs styling
-                        TextField("Enter Your name", text: $user)
+                        TextField("Enter Your name", text: $vm.user)
                             .padding(.leading, 20)
                             .frame(width: 300, height: 55)
                             .border(.gray, width: 2)
@@ -46,7 +44,7 @@ struct MessageView: View {
                         Spacer()
                         VStack {
                             Text("Enter Message Here")
-                            TextEditor(text: $message)
+                            TextEditor(text: $vm.message)
                                 .frame(width: 300, height: 250, alignment: .center)
                                 .border(.gray, width: 2)
                                 .padding(.bottom, 100)
@@ -61,12 +59,13 @@ struct MessageView: View {
                 }
             }
         }
-        .searchable(text: $searchedEmployees, prompt: "Search Employees")
+        .searchable(text: $vm.searchedEmployees, prompt: "Search Employees")
     }
 }
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
         MessageView()
+            .environmentObject(ViewModel())
     }
 }

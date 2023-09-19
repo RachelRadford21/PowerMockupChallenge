@@ -13,7 +13,6 @@ import SwiftUI
  */
 
 struct ContentView: View {
-    @State private var isActive = false
     @EnvironmentObject var vm: ViewModel
  
     var body: some View {

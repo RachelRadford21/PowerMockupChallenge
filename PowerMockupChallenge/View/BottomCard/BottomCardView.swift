@@ -11,7 +11,7 @@ import SwiftUI
  This view houses all the components for the bottom card
 */
 struct BottomCardView: View {
-    @State var isPresented = false
+    @EnvironmentObject var vm: ViewModel
     private let avatar: Image  = Image("Avatar.png")
     
     var body: some View {
@@ -29,8 +29,8 @@ struct BottomCardView: View {
             
             TextView(title: "View All", bottomPadding: 0, topPadding: 10, leadingPadding: 0, trailingPadding: 0, textSize: 14, textColor: .blue)
                 .onTapGesture {
-                    isPresented.toggle()
-                }.sheet(isPresented: $isPresented) {
+                    vm.isPresented.toggle()
+                }.sheet(isPresented: $vm.isPresented) {
                     ViewAllEmployeesView()
                 }
         }
@@ -40,6 +40,6 @@ struct BottomCardView: View {
 struct BottomCardView_Previews: PreviewProvider {
     static var previews: some View {
         BottomCardView()
-           
+            .environmentObject(ViewModel())
     }
 }
