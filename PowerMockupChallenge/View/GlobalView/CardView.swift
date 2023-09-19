@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CardView: View {
-    
     var width = UIScreen.main.bounds.width
     var height = UIScreen.main.bounds.height
     var colorChoice: Color = .white
@@ -24,6 +23,7 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView()
+           
             
             
     }

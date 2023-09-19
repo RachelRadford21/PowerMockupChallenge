@@ -19,6 +19,9 @@ struct ButtonView: View {
                 if name == "Follow" {
                     vm.followers += 1
                 }
+                if name == "Message" {
+                    vm.isMessageButtonPressed.toggle()
+                }
             }.frame(width: 150, height: 40, alignment: .center)
                 .font(.system(size: 14))
                 .fontWeight(.semibold)
@@ -26,6 +29,10 @@ struct ButtonView: View {
                 .background(buttonColor)
                 .cornerRadius(6)
                 .padding(.top, topPadding)
+                .sheet(isPresented: $vm.isMessageButtonPressed) {
+                    MessageView()
+                }
+            
         }
     }
 }

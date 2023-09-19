@@ -27,6 +27,7 @@ struct PowerIconView: View {
 struct PowerIconView_Previews: PreviewProvider {
     static var previews: some View {
         PowerIconView()
+         
            
     }
 }

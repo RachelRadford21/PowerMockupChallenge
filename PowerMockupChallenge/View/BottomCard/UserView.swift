@@ -14,7 +14,7 @@ struct UserView: View {
   var imageName = ""
     var body: some View {
         
-        
+    
         HStack {
             if employeeName == "Courtney Long" {
                 AvatarIconView(imageName: imageName)
@@ -37,5 +37,6 @@ struct UserView: View {
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
         UserView()
+            
     }
 }

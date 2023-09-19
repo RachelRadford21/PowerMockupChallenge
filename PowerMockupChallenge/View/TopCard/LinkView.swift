@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LinkView: View {
+    
     var title = ""
     var bottomPadding: CGFloat = 20
     var topPadding: CGFloat = 5
@@ -28,5 +29,6 @@ struct LinkView: View {
 struct LinkView_Previews: PreviewProvider {
     static var previews: some View {
         LinkView()
+          
     }
 }

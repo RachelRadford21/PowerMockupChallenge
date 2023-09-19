@@ -22,6 +22,7 @@ struct MainView: View {
                     CardView(width: geo.size.width / 1.08, height: geo.size.height / 2.09, colorChoice: .white)
                         .overlay {
                             TopCardView()
+                                
                         }
                     Spacer()
                     VStack {
