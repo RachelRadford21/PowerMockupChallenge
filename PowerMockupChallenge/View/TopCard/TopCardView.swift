@@ -26,6 +26,7 @@ struct TopCardView: View {
                 TextView(title: "Company", bottomPadding: 330, topPadding: 0, leadingPadding: -20, trailingPadding: 35, textSize: 13, textColor: Color.otherGrey)
                     .bold()
                     
+                    
                 
                 
             }
@@ -37,7 +38,7 @@ struct TopCardView: View {
                         // This link will go to Power's website
                         LinkView(title: "Visit Power", bottomPadding: 120, topPadding: -140, leadingPadding: 0, trailingPadding: 70, textSize: 14)
                     }
-                    SocialMediaStatsView(employees: 1068, textSize: 16, bottomPadding: 165, leadingPadding: 85, topPadding: 25)
+                        SocialMediaStatsView(employees: 1068, textSize: 16, bottomPadding: 165, leadingPadding: 85, topPadding: 25)
             
                 }.overlay {
                     TextView(title: "About", bottomPadding: 40, topPadding: 10, leadingPadding: 0, trailingPadding: 265, textSize: 16, textColor: .black)
@@ -58,6 +59,7 @@ struct TopCardView: View {
                             // This button will add one follower on click
                             ButtonView(name: "Follow", buttonColor: Color.powerColor, buttonTextColor: .white, topPadding: 250)
                             Spacer()
+                            // This button will take user to the MessageView
                             ButtonView(name: "Message", buttonColor: Color.otherGrey.opacity(0.1), buttonTextColor: Color.powerColor, topPadding: 250)
                                
                                

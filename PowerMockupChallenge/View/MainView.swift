@@ -13,7 +13,7 @@ import SwiftUI
  GeoReader is expensive so I try to use it sparingly
  */
 struct MainView: View {
-    @EnvironmentObject var vm: ViewModel 
+    @EnvironmentObject var vm: ViewModel
     var body: some View {
         GeometryReader { geo in
             if geo.size.height > geo.size.width {
@@ -22,16 +22,16 @@ struct MainView: View {
                     CardView(width: geo.size.width / 1.08, height: geo.size.height / 2.09, colorChoice: .white)
                         .overlay {
                             TopCardView()
-                                
+                            
                         }
                     Spacer()
                     VStack {
                         CardView(width: geo.size.width / 1.08, height: geo.size.height / 2.0, colorChoice: .white)
                             .overlay{
                                 VStack {
-                                   BottomCardView()
-                                       
-                            
+                                    BottomCardView()
+                                    
+                                    
                                 }
                             }
                     }
@@ -47,19 +47,18 @@ struct MainView: View {
                             .overlay{
                                 TopCardView()
                                     .padding(.trailing, 20)
-                                    
+                                
                             }
                         Spacer()
                         CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
                             .overlay{
                                 VStack {
                                     BottomCardView()
-                                      
+                                    
                                 }
                             }
                     }
                     .padding(.top)
-                    
                 }
             }
         }
@@ -70,6 +69,6 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(ViewModel())
-            
+        
     }
 }

@@ -15,5 +15,5 @@ class ViewModel: ObservableObject {
     @Published var user = ""
     @Published var message = ""
     @Published var searchedEmployees = ""
-    
+    @Published var imageName = "Avatar"
 }

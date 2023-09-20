@@ -9,11 +9,8 @@ import Foundation
 import SwiftUI
 // For Fake Data
 struct Employee: Identifiable{
-    
     var id: UUID 
     var firstname: String
     var lastname: String
-    var initials: String
-    var image: String?
     var role: String
 }

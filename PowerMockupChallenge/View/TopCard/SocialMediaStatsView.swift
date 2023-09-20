@@ -25,7 +25,7 @@ struct SocialMediaStatsView: View {
                     .font(.system(size: textSize))
                 
             }.padding(.bottom, bottomPadding)
-                .padding(.trailing, 5)
+            .padding(.trailing, 5)
             HStack {
                 Text("\(employees)").bold()
                     .font(.system(size: textSize))

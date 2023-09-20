@@ -12,7 +12,6 @@ import SwiftUI
 */
 struct BottomCardView: View {
     @EnvironmentObject var vm: ViewModel
-    private let avatar: Image  = Image("Avatar.png")
     
     var body: some View {
         VStack {
@@ -22,7 +21,9 @@ struct BottomCardView: View {
                 
                 UserView(employeeName: "Jason Cypret", employeeRole: "Vice President of User Experience" , initials: "JC")
                 UserView(employeeName: "Jason Battenfield", employeeRole: "Director of User Experience", initials: "JB")
-                UserView(employeeName: "Courtney Long", employeeRole: "UX Mentor", imageName: "Avatar")
+
+                UserView(employeeName: "Courtney Long", employeeRole: "UX Mentor")
+                
                 UserView(employeeName: "Stephen Marshall", employeeRole: "Senior UX Designer", initials: "SM")
 
             }

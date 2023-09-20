@@ -11,13 +11,12 @@ struct UserView: View {
     var employeeName = "Jason Cypret"
     var employeeRole = "Vice President of User Experience"
     var initials = ""
-    var imageName = ""
     var employees: [Employee] = Employee.randomData
     var body: some View {
     
         HStack {
             if employeeName == "Courtney Long" {
-                AvatarIconView(imageName: imageName)
+                AvatarIconView()
             }else {
                 UserIconView(initials: initials)
             }
@@ -36,6 +35,7 @@ struct UserView: View {
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
         UserView()
+         
             
     }
 }

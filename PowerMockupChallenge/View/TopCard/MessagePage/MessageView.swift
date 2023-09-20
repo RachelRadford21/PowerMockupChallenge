@@ -15,7 +15,7 @@ import SwiftUI
 */
 
 struct MessageView: View {
-    @EnvironmentObject var vm: ViewModel
+    @ObservedObject var vm: ViewModel = ViewModel()
     var employees: [Employee] = Employee.randomData
     // Filters data in lower or uppercase and first or last name
     var filteredEmployees: [Employee] {
@@ -24,14 +24,13 @@ struct MessageView: View {
         }
     }
     var body: some View {
-        // This view is a little large
         NavigationStack {
             PowerIconView(width: 55, height: 55, alignmentChoice: .topLeading, trailingPadding: 0, bottomPadding: 0)
             List {
                 ForEach(vm.searchedEmployees.isEmpty ? employees : filteredEmployees, id: \.id) { name in
                     NavigationLink {
                       
-                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)", imageName: name.image ?? "Avatar")
+                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
                             .padding(.top, 20)
                         Spacer()
                         MessageBubbleView(employee1: "Hi, do we still have a meeting at 10?", employee2: "Yes, we do. See you then.")
@@ -45,12 +44,9 @@ struct MessageView: View {
                                 .background(Color.black.opacity(0.3))
                                 .clipShape(RoundedRectangle(cornerRadius: 16.0, style: .continuous))
                             
-                            
                             HStack {
                                 ButtonView(name: "Send", buttonColor: Color.powerColor, buttonTextColor: .white, topPadding: 0)
                                 ButtonView(name: "Cancel", buttonColor: Color.otherGrey.opacity(0.1), buttonTextColor: .powerColor, topPadding: 0)
-                                    
-                                    
                                 
                             }.padding(.top, 20)
                         }.padding(.bottom, 20)

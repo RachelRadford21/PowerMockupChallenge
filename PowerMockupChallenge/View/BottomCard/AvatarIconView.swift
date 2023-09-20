@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AvatarIconView: View {
-    var imageName = "Avatar"
+    @EnvironmentObject var vm: ViewModel
     var body: some View {
-        Image("\(String(describing: imageName))")
+        Image("\(String(describing: vm.imageName))")
             .resizable()
             .frame(width: 50, height: 50)
             .padding(.trailing, 10)
@@ -20,5 +20,6 @@ struct AvatarIconView: View {
 struct AvatarIconView_Previews: PreviewProvider {
     static var previews: some View {
         AvatarIconView()
+            .environmentObject(ViewModel())
     }
 }
