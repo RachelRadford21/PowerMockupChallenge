@@ -21,7 +21,7 @@ extension Employee {
     static var randomData: [Employee] = [
         .init(id: UUID(), firstname: "Jason", lastname: "Cypret", role: "Vice President of UX Design"),
         .init(id: UUID(), firstname: "Justin", lastname: "Battenfield", role: "Director of User Experience"),
-        .init(id: UUID(), firstname: "Courtney", lastname: "Long", role: "UX Design Mentor"),
+        .init(id: UUID(), firstname: "Courtney", lastname: "Long", role: "UX Design Mentor", imageName: Image("\(String(describing: "Avatar"))")),
         .init(id: UUID(), firstname: "Stephen", lastname: "Marshall", role: "Senior UX Engineer"),
         .init(id: UUID(), firstname: "Jane", lastname: "Doe", role: "Associate UI/UX Developer"),
         .init(id: UUID(), firstname: "John", lastname: "Doe", role: "Associate UI/UX Developer"),

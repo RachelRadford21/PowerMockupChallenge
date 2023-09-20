@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ButtonView: View {
     @EnvironmentObject var vm: ViewModel
-    @State var isMessageButtonPressed = false
+@State var isMessageButtonPressed = false
+   
     var name = ""
     var buttonColor: Color = Color.powerColor
     var buttonTextColor: Color = .white

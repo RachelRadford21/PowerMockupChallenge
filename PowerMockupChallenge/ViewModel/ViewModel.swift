@@ -16,4 +16,5 @@ class ViewModel: ObservableObject {
     @Published var message = ""
     @Published var searchedEmployees = ""
     @Published var imageName = "Avatar"
+    @Published var isMessageButtonPressed = false
 }

@@ -38,9 +38,9 @@ struct BottomCardView: View {
     }
 }
 
-struct BottomCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        BottomCardView()
-            .environmentObject(ViewModel())
-    }
-}
+//struct BottomCardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BottomCardView()
+//            .environmentObject(ViewModel())
+//    }
+//}

@@ -12,8 +12,7 @@ struct PowerMockupChallengeApp: App {
     @StateObject var vm: ViewModel = ViewModel()
     var body: some Scene {
         WindowGroup {
-        
-           ContentView()
+            ContentView()
                 .environmentObject(vm)
                 .environment(\.font, Font.custom("Proxima Nova Reg", size: 10))
         }

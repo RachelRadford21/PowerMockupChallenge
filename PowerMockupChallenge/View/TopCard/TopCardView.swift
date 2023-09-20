@@ -26,8 +26,6 @@ struct TopCardView: View {
                 TextView(title: "Company", bottomPadding: 330, topPadding: 0, leadingPadding: -20, trailingPadding: 35, textSize: 13, textColor: Color.otherGrey)
                     .bold()
                     
-                    
-                
                 
             }
             .padding(.top, 30)

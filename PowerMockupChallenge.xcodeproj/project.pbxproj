@@ -34,6 +34,7 @@
 		AB8AA4812AB65B7600E1ED2D /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */; };
 		AB8AA4832AB673B200E1ED2D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4822AB673B200E1ED2D /* ButtonView.swift */; };
 		AB91E81A2ABA62E5003ADCE2 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */; };
+		AB91E8202ABB73E9003ADCE2 /* DismissSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91E81F2ABB73E9003ADCE2 /* DismissSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
 		AB8AA4822AB673B200E1ED2D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		AB91E81F2ABB73E9003ADCE2 /* DismissSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			children = (
 				AB809A2B2AB60DB900A0FA75 /* CardView.swift */,
 				AB809A302AB6218000A0FA75 /* TextView.swift */,
+				AB91E81F2ABB73E9003ADCE2 /* DismissSheetView.swift */,
 			);
 			path = GlobalView;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB7B89602AB7ABBD005F02BA /* UserIconView.swift in Sources */,
+				AB91E8202ABB73E9003ADCE2 /* DismissSheetView.swift in Sources */,
 				AB818A812AB909A100ABE862 /* Employee.swift in Sources */,
 				AB809A2A2AB6072800A0FA75 /* Extensions.swift in Sources */,
 				AB818A722AB8E17200ABE862 /* AvatarIconView.swift in Sources */,

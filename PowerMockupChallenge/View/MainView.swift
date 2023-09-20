@@ -41,24 +41,28 @@ struct MainView: View {
             }
             else if geo.size.width > geo.size.height {
                 // Landscape View
-                VStack(spacing: 20) {
-                    HStack(spacing: -20) {
-                        CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
-                            .overlay{
-                                TopCardView()
-                                    .padding(.trailing, 20)
-                                
-                            }
-                        Spacer()
-                        CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
-                            .overlay{
-                                VStack {
-                                    BottomCardView()
+                ScrollView {
+                    VStack(spacing: 20) {
+                        HStack(spacing: -20) {
+                            CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
+                                .overlay{
+                                    TopCardView()
+                                        .padding(.trailing, 20)
                                     
                                 }
-                            }
+                        
+                        Spacer()
+                       
+                            CardView(width: geo.size.width / 2.00, height: geo.size.height / 1.025, colorChoice: .white)
+                                .overlay{
+                                    VStack {
+                                        BottomCardView()
+                                        
+                                    }
+                                }
+                        }
+                        .padding(.top)
                     }
-                    .padding(.top)
                 }
             }
         }
