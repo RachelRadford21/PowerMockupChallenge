@@ -13,6 +13,7 @@ struct ViewAllEmployeesView: View {
         List {
             ForEach(employees) { employee in
                 UserView(employeeName: "\(employee.firstname)  \(employee.lastname)", employeeRole: "\(employee.role)", initials: "\(employee.firstname.first!)" + "\(employee.lastname.first!)", imageName: "Avatar")
+                    // Unfortunately the icon doesnt show image for Courtney in this view
             }
         }
     }

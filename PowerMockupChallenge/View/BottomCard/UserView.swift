@@ -12,13 +12,12 @@ struct UserView: View {
     var employeeRole = "Vice President of User Experience"
     var initials = ""
     var imageName = ""
+    var employees: [Employee] = Employee.randomData
     var body: some View {
-        
-    // Could make this a ForEach and loop through
+    
         HStack {
             if employeeName == "Courtney Long" {
                 AvatarIconView(imageName: imageName)
-                    
             }else {
                 UserIconView(initials: initials)
             }

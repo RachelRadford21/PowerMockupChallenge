@@ -30,8 +30,8 @@ struct MessageView: View {
             List {
                 ForEach(vm.searchedEmployees.isEmpty ? employees : filteredEmployees, id: \.id) { name in
                     NavigationLink {
-                        
-                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)", imageName: name.firstname == "Courtney" ? "Avatar" : "")
+                      
+                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)", imageName: name.image ?? "Avatar")
                             .padding(.top, 20)
                         Spacer()
                         MessageBubbleView(employee1: "Hi, do we still have a meeting at 10?", employee2: "Yes, we do. See you then.")
@@ -56,7 +56,7 @@ struct MessageView: View {
                         }.padding(.bottom, 20)
                         
                     }label: {
-                        Text(name.firstname + " " + name.lastname)
+                        Text("\(name.firstname) \(name.lastname)")
                             .font(.system(size: 16))
                     }
                 }

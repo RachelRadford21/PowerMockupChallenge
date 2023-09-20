@@ -10,7 +10,7 @@ import SwiftUI
 struct AvatarIconView: View {
     var imageName = "Avatar"
     var body: some View {
-        Image(imageName)
+        Image("\(String(describing: imageName))")
             .resizable()
             .frame(width: 50, height: 50)
             .padding(.trailing, 10)

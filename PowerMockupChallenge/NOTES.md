@@ -10,3 +10,5 @@
 - Build out Folder Architecture
 
 - Build out MainView and then separate out reusable components
+
+- Having issues with getting Courtney's icon to show in ViewAllEmployees and MessageView
