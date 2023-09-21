@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 class ViewModel: ObservableObject {
+    @Published var employees: [Employee] = Employee.randomData
     @Published var isActive = false
     @Published var followers = 768
     @Published var isPresented = false
