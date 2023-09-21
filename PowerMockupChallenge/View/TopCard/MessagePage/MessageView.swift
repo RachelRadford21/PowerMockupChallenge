@@ -32,6 +32,7 @@ struct MessageView: View {
                 
                 ForEach(vm.searchedEmployees.isEmpty ? vm.employees : filteredEmployees, id: \.id) { name in
                     NavigationLink {
+                        
                         if UIScreen.main.bounds.height > UIScreen.main.bounds.width {
                             HStack {
                                 if name.firstname == "Courtney" || name.lastname == "Long" {

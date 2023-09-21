@@ -12,7 +12,6 @@ import SwiftUI
 */
 struct BottomCardView: View {
     @EnvironmentObject var vm: ViewModel
-    
     var body: some View {
         VStack {
             TextView(title: "Employees", bottomPadding: 15, topPadding: 100, leadingPadding: 25, trailingPadding: 255, textSize: 16, textColor: .black)

@@ -19,6 +19,8 @@ extension Color {
     static let recStrokeColor = Color(red: 0.89, green: 0.91, blue: 0.94)
     static let zstackBackground = Color(red: 0.95, green: 0.97, blue: 0.98)
 }
+
+
 // Fake Data
 extension Employee {
     static var randomData: [Employee] = [

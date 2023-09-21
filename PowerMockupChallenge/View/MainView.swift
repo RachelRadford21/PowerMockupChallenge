@@ -14,6 +14,7 @@ import SwiftUI
  */
 struct MainView: View {
     @EnvironmentObject var vm: ViewModel
+   
     var body: some View {
         Color.zstackBackground
         GeometryReader { geo in

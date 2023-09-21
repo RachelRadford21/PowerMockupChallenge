@@ -11,6 +11,7 @@ struct CardView: View {
     var width = UIScreen.main.bounds.width
     var height = UIScreen.main.bounds.height
     var colorChoice: Color = .white
+    
     var body: some View {
         Rectangle()
         // if this is hardcoded, it cannot grow and shrink with diff device sizes

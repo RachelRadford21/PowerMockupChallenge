@@ -19,6 +19,7 @@ struct ButtonView: View {
         HStack {
             Button(name) {
                 buttonFunctions()
+               
             }.frame(width: 150, height: 40, alignment: .center)
                 .font(.system(size: 14))
                 .fontWeight(.semibold)
@@ -28,6 +29,7 @@ struct ButtonView: View {
                 .padding(.top, topPadding)
                 .sheet(isPresented: $isMessageButtonPressed) {
                     MessageView()
+                       
                 }
             
         }
