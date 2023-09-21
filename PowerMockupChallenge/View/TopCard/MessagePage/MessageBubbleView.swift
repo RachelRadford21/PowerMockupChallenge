@@ -31,7 +31,7 @@ struct MessageBubbleView: View {
                 .font(.system(size: 16))
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)
-                .background(Color.lightGrey)
+                .background(Color.topTextlightGrey)
                 .cornerRadius(20)
                 .padding(.trailing, employee2trailingPad)
                 .padding(.bottom, employee2BottomPad)

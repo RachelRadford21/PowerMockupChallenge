@@ -25,7 +25,7 @@ struct ContentView: View {
                 ZStack {
                     Color.powerColor
                         .ignoresSafeArea()
-                    PowerIconView(width: 200, height: 200, alignmentChoice: .center, trailingPadding: 0, bottomPadding: 0)
+                    PowerIconView(width: 200, height: 200, alignmentChoice: .center)
                 }
             }
         }

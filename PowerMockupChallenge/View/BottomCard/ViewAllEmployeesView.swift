@@ -13,10 +13,23 @@ struct ViewAllEmployeesView: View {
     var body: some View {
         DismissSheetView()
         List {
-            ForEach(employees) { employee in
-                UserView(employeeName: "\(employee.firstname)  \(employee.lastname)", employeeRole: "\(employee.role)", initials: "\(employee.firstname.first!)" + "\(employee.lastname.first!)")
-                    // Unfortunately the icon doesnt show image for Courtney in this view
-            }
+                ForEach(vm.employees, id: \.id) { name in
+                    
+                    HStack {
+                        if name.firstname == "Courtney" || name.lastname == "Long" {
+                            AvatarIconView()
+                                .padding(.bottom, 20)
+                        }else {
+                            UserIconView(initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
+                                .padding(.bottom, 20)
+                        }
+                        
+                        UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)")
+                            .padding(.bottom, 20)
+                        
+                    }
+                }
+                .listRowSeparator(.hidden)
         }
     }
 }

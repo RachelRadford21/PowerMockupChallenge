@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TextView: View {
     var title = ""
-    var bottomPadding: CGFloat = 280
+    var bottomPadding: CGFloat = 0
     var topPadding: CGFloat = 0
     var leadingPadding: CGFloat = 0
     var trailingPadding: CGFloat = 0
-    var textSize: CGFloat = 22
+    var textSize: CGFloat = 0
     var textColor: Color = .black
     var body: some View {
         

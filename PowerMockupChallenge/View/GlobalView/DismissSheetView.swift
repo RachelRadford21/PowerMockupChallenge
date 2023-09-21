@@ -13,7 +13,7 @@ struct DismissSheetView: View {
         // Dismiss sheet. Can use in any orientation but useful for landscape
         RoundedRectangle(cornerRadius: 20)
                        .frame(width: 50, height: 3, alignment: .center)
-                       .foregroundColor(.lightGrey)
+                       .foregroundColor(.topTextlightGrey)
                        .padding(.top, 20)
                        .onTapGesture {
                            DispatchQueue.main.async {

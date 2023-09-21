@@ -12,7 +12,7 @@ struct AvatarIconView: View {
     var body: some View {
         Image("\(String(describing: vm.imageName))")
             .resizable()
-            .frame(width: 50, height: 50)
+            .frame(width: 45, height: 45)
             .padding(.trailing, 10)
     }
 }

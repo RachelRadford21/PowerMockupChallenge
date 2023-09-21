@@ -11,31 +11,41 @@ import SwiftUI
   Allows user to search for employees to message when Message button is pressed.
  This was just fun. I have always used data from an api or local json file for data
  but not a fake data set.
- ** See if you can break this down into smaller views
+ ** See if you can break this down into smaller views 
     
 */
 
 struct MessageView: View {
     @EnvironmentObject var vm: ViewModel
-    var employees: [Employee] = Employee.randomData
     // Filters data in lower or uppercase and first or last name
     var filteredEmployees: [Employee] {
-        return employees.filter { $0.firstname.localizedCaseInsensitiveContains(vm.searchedEmployees) || $0.lastname.localizedCaseInsensitiveContains(vm.searchedEmployees)
+        return vm.employees.filter { $0.firstname.localizedCaseInsensitiveContains(vm.searchedEmployees) || $0.lastname.localizedCaseInsensitiveContains(vm.searchedEmployees)
             
         }
     }
     var body: some View {
         DismissSheetView()
         NavigationStack {
-            PowerIconView(width: 55, height: 55, alignmentChoice: .topLeading, trailingPadding: 0, bottomPadding: 0)
+            PowerIconView(width: 55, height: 55, alignmentChoice: .topLeading)
+
             List {
-                ForEach(vm.searchedEmployees.isEmpty ? employees : filteredEmployees, id: \.id) { name in
+                
+                ForEach(vm.searchedEmployees.isEmpty ? vm.employees : filteredEmployees, id: \.id) { name in
                     NavigationLink {
                         if UIScreen.main.bounds.height > UIScreen.main.bounds.width {
-                
-                            UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
-                                .padding(.bottom, 50)
-
+                            HStack {
+                                if name.firstname == "Courtney" || name.lastname == "Long" {
+                                    AvatarIconView()
+                                        .padding(.bottom, 50)
+                                }else {
+                                    UserIconView(initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
+                                        .padding(.bottom, 50)
+                                }
+                                
+                                UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)")
+                                    .padding(.bottom, 50)
+                                
+                            }
                             MessageBubbleView(employee1: "Hi, do we still have a meeting at 10?", employee2: "Yes, we do. See you then.")
                             
                             VStack {
@@ -58,10 +68,15 @@ struct MessageView: View {
                             
                             VStack {
                                 HStack {
-                                   
-                                    UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)", initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
-                                        .padding(.trailing, 20)
+                                    if name.firstname == "Courtney" || name.lastname == "Long" {
+                                        AvatarIconView()
+                                    }else {
+                                        UserIconView(initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
+                                    }
 
+                                    UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)")
+                                         .padding(.trailing, 20)
+                                        
                                     Spacer()
                                     VStack {
                                        Spacer()
@@ -89,13 +104,17 @@ struct MessageView: View {
                                     .padding(.vertical, 100)
                                     .padding(.leading, 120)
                                    
-                                }
+                                } .padding(.leading, 50)
                             }
                              .padding(.horizontal, 50)
                         }
                     }label: {
-                        Text("\(name.firstname) \(name.lastname)")
-                            .font(.system(size: 16))
+                       
+                            
+                            Text("\(name.firstname) \(name.lastname)")
+                                .font(.system(size: 16))
+                        
+                      
                     }.navigationViewStyle(.stack)
                 }
             }

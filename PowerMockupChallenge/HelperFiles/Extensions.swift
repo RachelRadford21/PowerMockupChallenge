@@ -9,12 +9,15 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    static let lightGrey = Color(red: 0.41, green: 0.47, blue: 0.53)
+    static let topTextlightGrey = Color(red: 0.41, green: 0.47, blue: 0.53)
     static let otherGrey = Color(red: 0.58, green: 0.66, blue: 0.72)
     static let linkColor = Color(red: 0, green: 0.34, blue: 0.81)
-    static let powerColor = Color(red: 0, green: 0.45, blue: 0.81)
+    static let powerColor = Color(red: 0, green: 0.34, blue: 0.81)
     static let messageButtonColor = Color(red: 0, green: 0.34, blue: 0.81)
-    
+    static let textBackgroundColor = Color(red: 0.58, green: 0.66, blue: 0.72, opacity: 0.1)
+    static let customTextColor = Color(red: 0.14, green: 0.17, blue: 0.26)
+    static let recStrokeColor = Color(red: 0.89, green: 0.91, blue: 0.94)
+    static let zstackBackground = Color(red: 0.95, green: 0.97, blue: 0.98)
 }
 // Fake Data
 extension Employee {
@@ -39,6 +42,9 @@ extension ButtonView {
         }
         if name == "Cancel" {
             vm.user = ""
+        }
+        if name == "View All" {
+            vm.isPresented.toggle()
         }
     }
 }

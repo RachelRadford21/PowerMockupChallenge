@@ -14,4 +14,5 @@ struct Employee: Identifiable{
     var lastname: String
     var role: String
     var imageName: Image?
+    var initials: String?
 }

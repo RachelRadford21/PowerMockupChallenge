@@ -15,32 +15,39 @@ struct BottomCardView: View {
     
     var body: some View {
         VStack {
-            TextView(title: "Employees", bottomPadding: 20, topPadding: 20, leadingPadding: 25, trailingPadding: 255, textSize: 16, textColor: .black)
+            TextView(title: "Employees", bottomPadding: 15, topPadding: 100, leadingPadding: 25, trailingPadding: 255, textSize: 16, textColor: .black)
                 .bold()
-            VStack(alignment: .leading) {
-                
-                UserView(employeeName: "Jason Cypret", employeeRole: "Vice President of User Experience" , initials: "JC")
-                UserView(employeeName: "Jason Battenfield", employeeRole: "Director of User Experience", initials: "JB")
-
-                UserView(employeeName: "Courtney Long", employeeRole: "UX Mentor")
-                
-                UserView(employeeName: "Stephen Marshall", employeeRole: "Senior UX Designer", initials: "SM")
-
-            }
-            
-            TextView(title: "View All", bottomPadding: 0, topPadding: 10, leadingPadding: 0, trailingPadding: 0, textSize: 14, textColor: .blue)
-                .onTapGesture {
-                    vm.isPresented.toggle()
-                }.sheet(isPresented: $vm.isPresented) {
+          
+                VStack(alignment: .leading) {
+                    let bottomCardEmployeeArray = vm.employees.prefix(4)
+                    ForEach(bottomCardEmployeeArray, id: \.id) { name in
+                      
+                        HStack {
+                            if name.firstname == "Courtney" || name.lastname == "Long" {
+                                AvatarIconView()
+                                    .padding(.bottom, 10)
+                            }else {
+                                UserIconView(initials: "\(name.firstname.first!)" + "\(name.lastname.first!)")
+                                    .padding(.bottom, 10)
+                            }
+                            
+                            UserView(employeeName: "\(name.firstname)  \(name.lastname)", employeeRole: "\(name.role)")
+                                .padding(.bottom, 10)
+                            
+                        }.padding(.trailing, 40)
+                    }
+                }
+            ButtonView(name: "View All", buttonColor: .clear, buttonTextColor: .powerColor, topPadding: 5)
+                .sheet(isPresented: $vm.isPresented) {
                     ViewAllEmployeesView()
                 }
-        }
+        } .padding(.bottom, 75)
     }
 }
 
-//struct BottomCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BottomCardView()
-//            .environmentObject(ViewModel())
-//    }
-//}
+struct BottomCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        BottomCardView()
+            .environmentObject(ViewModel())
+    }
+}

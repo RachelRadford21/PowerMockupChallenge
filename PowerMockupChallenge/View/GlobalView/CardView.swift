@@ -13,9 +13,11 @@ struct CardView: View {
     var colorChoice: Color = .white
     var body: some View {
         Rectangle()
-            .frame(width: width, height: height)
+        // if this is hardcoded, it cannot grow and shrink with diff device sizes
+  //          .frame(width: 378, height: 370, alignment: .topLeading)
+            .frame(width: height, height: width, alignment: .topLeading)
             .foregroundColor(colorChoice)
-            .cornerRadius(2)
+            .cornerRadius(20)
 
     }
 }

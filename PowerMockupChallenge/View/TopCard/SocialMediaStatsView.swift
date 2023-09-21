@@ -18,20 +18,30 @@ struct SocialMediaStatsView: View {
         
         HStack {
             HStack {
-                Text("\(vm.followers)").bold()
-                    .font(.system(size: textSize))
+                // Used environmentobject so the count would update on button click
+                // The file says font is 16 but it to large here. Which is fine except in landscape it moves to far to the right.
+                // This is probably cause by the the text being one line in Figma
+                Text("\(vm.followers)")
+                    .foregroundColor(Color.customTextColor)
+                    .font(.system(size: textSize, weight: .bold))
                 Text("Followers")
-                    .foregroundColor(Color.lightGrey)
-                    .font(.system(size: textSize))
+                    .font(Font.custom("Proxima Nova", size: 14)
+                        .weight(.bold)
+                    )
+                    .foregroundColor(.topTextlightGrey)
+                    
                 
             }.padding(.bottom, bottomPadding)
             .padding(.trailing, 5)
             HStack {
-                Text("\(employees)").bold()
-                    .font(.system(size: textSize))
+                Text("\(employees)")
+                    .foregroundColor(Color.customTextColor)
+                    .font(.system(size: textSize, weight: .bold))
                 Text("Employees")
-                    .foregroundColor(Color.lightGrey)
-                    .font(.system(size: textSize))
+                    .font(Font.custom("Proxima Nova", size: 14)
+                        .weight(.bold)
+                    )
+                    .foregroundColor(.topTextlightGrey)
             }.padding(.bottom, bottomPadding)
             
         }.padding(.leading, leadingPadding)

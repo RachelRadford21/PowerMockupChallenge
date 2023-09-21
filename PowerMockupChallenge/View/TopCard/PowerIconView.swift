@@ -11,16 +11,18 @@ struct PowerIconView: View {
     var width = UIScreen.main.bounds.width
     var height = UIScreen.main.bounds.height
     var alignmentChoice: Alignment = .topLeading
-    var trailingPadding: CGFloat = 20
-    var bottomPadding: CGFloat = 250
+//    var trailingPadding: CGFloat = 00
+//    var bottomPadding: CGFloat = 0
     
     var body: some View {
-        Image("1676290149155")
-            .resizable()
-            .frame(width: width, height: height, alignment: alignmentChoice)
-            .cornerRadius(10)
-            .padding(.trailing, trailingPadding)
-            .padding(.bottom, bottomPadding)
+        
+        HStack {
+            Image("1676290149155")
+                .resizable()
+                .cornerRadius(10)
+        }.padding(0)
+        .frame(width: width, height: height, alignment: alignmentChoice)
+            
     }
 }
 

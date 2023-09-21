@@ -19,7 +19,6 @@
 		AB809A0C2AB5EC1400A0FA75 /* PowerMockupChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A0B2AB5EC1400A0FA75 /* PowerMockupChallengeUITests.swift */; };
 		AB809A0E2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A0D2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift */; };
 		AB809A1F2AB5ED4100A0FA75 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A1E2AB5ED4100A0FA75 /* MainView.swift */; };
-		AB809A232AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */; };
 		AB809A262AB5F28D00A0FA75 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A252AB5F28D00A0FA75 /* ViewModel.swift */; };
 		AB809A2A2AB6072800A0FA75 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A292AB6072800A0FA75 /* Extensions.swift */; };
 		AB809A2C2AB60DB900A0FA75 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB809A2B2AB60DB900A0FA75 /* CardView.swift */; };
@@ -35,6 +34,7 @@
 		AB8AA4832AB673B200E1ED2D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA4822AB673B200E1ED2D /* ButtonView.swift */; };
 		AB91E81A2ABA62E5003ADCE2 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */; };
 		AB91E8202ABB73E9003ADCE2 /* DismissSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91E81F2ABB73E9003ADCE2 /* DismissSheetView.swift */; };
+		AB91E8222ABC995C003ADCE2 /* PowerHomeHeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91E8212ABC995C003ADCE2 /* PowerHomeHeadlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		AB809A0D2AB5EC1400A0FA75 /* PowerMockupChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMockupChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB809A1A2AB5EC5100A0FA75 /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
 		AB809A1E2AB5ED4100A0FA75 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AB809A242AB5F1E300A0FA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AB809A252AB5F28D00A0FA75 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AB809A292AB6072800A0FA75 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		AB8AA4822AB673B200E1ED2D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AB91E8192ABA62E5003ADCE2 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 		AB91E81F2ABB73E9003ADCE2 /* DismissSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSheetView.swift; sourceTree = "<group>"; };
+		AB91E8212ABC995C003ADCE2 /* PowerHomeHeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerHomeHeadlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +208,6 @@
 		AB809A212AB5F11300A0FA75 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AB809A222AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf */,
 				AB7B89612AB8B15F005F02BA /* proxima nova */,
 			);
 			path = Fonts;
@@ -219,6 +218,7 @@
 			children = (
 				AB8AA4802AB65B7600E1ED2D /* TopCardView.swift */,
 				AB809A2E2AB60FA400A0FA75 /* PowerIconView.swift */,
+				AB91E8212ABC995C003ADCE2 /* PowerHomeHeadlineView.swift */,
 				AB809A322AB62D8E00A0FA75 /* LinkView.swift */,
 				AB8AA47E2AB6368C00E1ED2D /* SocialMediaStatsView.swift */,
 				AB8AA4822AB673B200E1ED2D /* ButtonView.swift */,
@@ -372,7 +372,6 @@
 			files = (
 				AB7B89622AB8B15F005F02BA /* proxima nova in Resources */,
 				AB8099F82AB5EC1400A0FA75 /* Preview Assets.xcassets in Resources */,
-				AB809A232AB5F1AE00A0FA75 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				AB8099F52AB5EC1400A0FA75 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +418,7 @@
 				AB7B895A2AB79AFF005F02BA /* BottomCardView.swift in Sources */,
 				AB809A332AB62D8E00A0FA75 /* LinkView.swift in Sources */,
 				AB809A312AB6218000A0FA75 /* TextView.swift in Sources */,
+				AB91E8222ABC995C003ADCE2 /* PowerHomeHeadlineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
