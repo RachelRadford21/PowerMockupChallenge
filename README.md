@@ -1,6 +1,6 @@
 # PowerMockupChallenge
-![Portrait](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/885b9cd3-902c-4639-ba64-ce0b1cf601ff)
-![Landscape left](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/1dd083ed-9abe-41f1-9f8a-2379c9fa6800)
-![LandscapeRight](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/6e3b59cb-64ad-4af2-8cce-ac12419001fa)
+![Portrait](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/5cd284d4-4de3-42bb-b6e4-76ee0df4b013)
+![LandscapeLeft](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/d7e43622-ebeb-48d2-b0cf-35c86e711295)
+![LandscapeRight](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/3c85118a-30f7-4eac-8a93-001f1cd664a0)
 ![OpeningPage](https://github.com/RachelRadford21/PowerMockupChallenge/assets/54749071/c0fe4d00-604c-4b1c-8648-5279454b953b)
 
